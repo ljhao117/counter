@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Count and Counter</title>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,8 +15,20 @@
     <p id="count">
         0
     </p>
-    <input type="button" value="resetButton" onclick="resetButton()">
-    <input type="button" value="plusButton" onclick="plusButton()">
+
+    <script>
+        function handleClick() {
+            alert("You clicked me");
+        }
+
+        return (
+            <button onClick={handleClick}>
+                Clink me
+            </button>
+        );
+    </script>
+    <!-- <input type="button" value="resetButton" onclick="resetButton()">
+    <input type="button" value="plusButton" onclick="plusButton()"> -->
 </body>
 
 </html>
